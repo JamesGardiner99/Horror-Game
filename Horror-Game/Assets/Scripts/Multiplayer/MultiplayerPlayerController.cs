@@ -6,6 +6,7 @@ public class MultiplayerPlayerController : NetworkBehaviour
 {
     [Header("Movement")]
     public float moveSpeed = 5f;
+    public float sprintSpeed = 8f;
     public float mouseSensitivity = 2f;
     public float gravity = -20f;
 
@@ -13,12 +14,15 @@ public class MultiplayerPlayerController : NetworkBehaviour
     public Camera playerCamera;
 
     private CharacterController controller;
+    private PlayerItemController itemController;
+
     private float verticalVelocity;
     private float cameraPitch;
 
     private void Awake()
     {
         controller = GetComponent<CharacterController>();
+        itemController = GetComponent<PlayerItemController>();
     }
 
     public override void OnNetworkSpawn()
@@ -45,12 +49,18 @@ public class MultiplayerPlayerController : NetworkBehaviour
 
     private void Update()
     {
+        if (!IsOwner)
+            return;
+
         HandleLook();
         HandleMovement();
     }
 
     private void HandleLook()
     {
+        if (playerCamera == null)
+            return;
+
         float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity;
         float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity;
 
@@ -67,15 +77,27 @@ public class MultiplayerPlayerController : NetworkBehaviour
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
 
-        Vector3 move = transform.right * x + transform.forward * z;
+        bool isCranking = itemController != null && itemController.IsCranking;
+        bool isSprinting = Input.GetKey(KeyCode.LeftShift) && !isCranking;
+
+        float currentSpeed = isSprinting ? sprintSpeed : moveSpeed;
+
+        float speedMultiplier = 1f;
+
+        if (itemController != null)
+            speedMultiplier = itemController.CrankingMoveMultiplier;
+
+        Vector3 horizontalMove = transform.right * x + transform.forward * z;
+        horizontalMove *= currentSpeed * speedMultiplier;
 
         if (controller.isGrounded && verticalVelocity < 0)
             verticalVelocity = -2f;
 
         verticalVelocity += gravity * Time.deltaTime;
 
-        move.y = verticalVelocity;
+        Vector3 velocity = horizontalMove;
+        velocity.y = verticalVelocity;
 
-        controller.Move(move * moveSpeed * Time.deltaTime);
+        controller.Move(velocity * Time.deltaTime);
     }
 }

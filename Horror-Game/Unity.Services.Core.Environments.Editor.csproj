@@ -19,7 +19,7 @@
     <RootNamespace></RootNamespace>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>Unity.VisualStudio.Editor</AssemblyName>
+    <AssemblyName>Unity.Services.Core.Environments.Editor</AssemblyName>
     <TargetFramework>netstandard2.1</TargetFramework>
     <BaseDirectory>.</BaseDirectory>
   </PropertyGroup>
@@ -64,55 +64,100 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.17f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Library\PackageCache\com.unity.ide.visualstudio@2.0.22\Editor\KnownAssemblies.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ide.visualstudio@2.0.22\Editor\VisualStudioForWindowsInstallation.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ide.visualstudio@2.0.22\Editor\ProjectGeneration\ProjectGenerationFlag.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ide.visualstudio@2.0.22\Editor\Messaging\TcpListener.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ide.visualstudio@2.0.22\Editor\ProjectGeneration\AssemblyNameProvider.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ide.visualstudio@2.0.22\Editor\SolutionProjectEntry.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ide.visualstudio@2.0.22\Editor\SimpleJSON.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ide.visualstudio@2.0.22\Editor\Messaging\Serializer.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ide.visualstudio@2.0.22\Editor\Messaging\TcpClient.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ide.visualstudio@2.0.22\Editor\ProjectGeneration\SdkStyleProjectGeneration.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ide.visualstudio@2.0.22\Editor\Testing\TestStatusAdaptor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ide.visualstudio@2.0.22\Editor\Messaging\MessageType.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ide.visualstudio@2.0.22\Editor\VisualStudioIntegration.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ide.visualstudio@2.0.22\Editor\ProjectGeneration\ProjectProperties.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ide.visualstudio@2.0.22\Editor\Testing\TestAdaptor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ide.visualstudio@2.0.22\Editor\Cli.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ide.visualstudio@2.0.22\Editor\Image.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ide.visualstudio@2.0.22\Editor\Messaging\Deserializer.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ide.visualstudio@2.0.22\Editor\Messaging\UdpSocket.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ide.visualstudio@2.0.22\Editor\Messaging\MessageEventArgs.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ide.visualstudio@2.0.22\Editor\SolutionParser.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ide.visualstudio@2.0.22\Editor\VisualStudioInstallation.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ide.visualstudio@2.0.22\Editor\FileUtility.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ide.visualstudio@2.0.22\Editor\UsageUtility.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ide.visualstudio@2.0.22\Editor\Messaging\ExceptionEventArgs.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ide.visualstudio@2.0.22\Editor\VisualStudioForMacInstallation.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ide.visualstudio@2.0.22\Editor\Solution.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ide.visualstudio@2.0.22\Editor\ProjectGeneration\ProjectGeneration.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ide.visualstudio@2.0.22\Editor\ProcessRunner.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ide.visualstudio@2.0.22\Editor\Testing\TestResultAdaptor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ide.visualstudio@2.0.22\Editor\ProjectGeneration\FileIOProvider.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ide.visualstudio@2.0.22\Editor\AssemblyInfo.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ide.visualstudio@2.0.22\Editor\UnityInstallation.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ide.visualstudio@2.0.22\Editor\ProjectGeneration\LegacyStyleProjectGeneration.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ide.visualstudio@2.0.22\Editor\VisualStudioEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ide.visualstudio@2.0.22\Editor\Discovery.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ide.visualstudio@2.0.22\Editor\Testing\TestRunnerCallbacks.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ide.visualstudio@2.0.22\Editor\Testing\TestRunnerApiListener.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ide.visualstudio@2.0.22\Editor\VisualStudioCodeInstallation.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ide.visualstudio@2.0.22\Editor\Messaging\Message.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ide.visualstudio@2.0.22\Editor\SolutionProperties.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ide.visualstudio@2.0.22\Editor\VersionPair.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ide.visualstudio@2.0.22\Editor\ProjectGeneration\GUIDProvider.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ide.visualstudio@2.0.22\Editor\Messaging\Messenger.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ide.visualstudio@2.0.22\Editor\AsyncOperation.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ide.visualstudio@2.0.22\Editor\Symbols.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\Settings\EnvironmentSettingsProvider.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\Client\Http\IsolatedJsonConvert.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\Client\Models\UnityOrganizationMemberV1.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\Client\Models\UnityGetEnvironments200Response.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\Client\Models\UnityGetUserPermissions200Response.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\Analytics\EnvironmentAnalyticsSender.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\ValidationResult.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\Client\Models\UnityUpdateOrganizationRequest.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\Client\ErrorMitigation\RetryPolicyConfig.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\Client\Models\UnityPatchProjectV1Request.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\Client\Http\JsonHelpers.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\Client\Apis\DefaultApi.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\Client\Models\UnityUserGuestProjectV1.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\Client\Http\ResponseHandler.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\Save\IEnvironmentSaveSystem.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\Client\Models\UnityOrganizationV1.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\Client\Http\DeserializationException.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\IProjectInfo.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\Settings\EnvironmentIdentifier.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\Settings\EnvironmentSettings.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\Analytics\IAnalyticsSender.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\Analytics\EnvironmentAnalytics.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\Client\Models\UnityListProjects200Response.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\EnvironmentNotFoundException.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\Client\Http\JsonObjectConverter.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\Client\Models\UnityTransferProjectRequest.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\Client\ErrorMitigation\StatusCodePolicyConfig.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\Analytics\IEnvironmentAnalytics.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\Client\Http\Responses.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\Client\Http\IDeserializable.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\EnvironmentsApi.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\Client\Http\IHttpClient.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\Client\ErrorMitigation\IRetryPolicy.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\Client\Models\UnityUserOrganizationsV1OrganizationsInner.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\AssemblyInfo.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\IEnvironmentValidator.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\Client\Http\DeserializationSettings.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\Client\Scheduler\EngineStateHelper.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\Client\Models\UnityListOrganizationFavoriteProjects200Response.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\ProjectInfo.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\EnvironmentsConstants.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\Client\Apis\DefaultApiRequests.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\Client\Scheduler\ThreadHelper.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\Client\ErrorMitigation\RetryPolicy.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\Client\Http\JsonObject.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\UI\EnvironmentView.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\Client\Models\UnityCreateOrganizationRequest.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\Client\Models\UnityCreateProjectRequest.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\IEnvironmentProvider.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\EnvironmentsApiInternal.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\Client\Models\UnityOrganizationWithAddressV1.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\Config\EnvironmentConfigProvider.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\IEnvironmentsApi.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\Client\Http\HttpClientResponse.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\EnvironmentsClient.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\Client\Configuration\Configuration.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\Client\Http\AsyncOpRetry.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\Client\Http\BaseApiClient.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\EnvironmentValidator.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\EnvironmentInfo.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\EnvironmentProvider.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\EnvironmentServiceExtensions.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\Client\Models\UnityGetOrganizationMembers200Response.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\Analytics\EnvironmentAnalyticEvent.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\Client\Http\HttpException.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\IEnvironmentFetcher.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\Client\Http\HttpClient.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\Client\Models\IdentityIOneOf.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\Client\Models\UnityCreateAddressRequest.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\Client\Models\UnityCreateEnvironmentRequest.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\Client\Models\UnityProjectV1.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\Client\Models\UnityGetUserGuestProjects200Response.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\Client\Models\UnityEnvironmentV1.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\EnvironmentServiceRegistry.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\Client\Http\ResponseDeserializationException.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\Client\Http\UnityWebRequestHelpers.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\IEnvironmentService.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\Client\Models\UnityUploadIconV1201Response.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\Save\EnvironmentSaveSystem.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\Client\Models\UnityUserOrganizationsV1.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\EnvironmentService.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\Client\Models\UnityAddressV1.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\EnvironmentsClientFactory.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\Analytics\EnvironmentChangedParameters.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\UI\EnvironmentSelector.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Library\PackageCache\com.unity.ide.visualstudio@2.0.22\Editor\com.unity.ide.visualstudio.asmdef" />
+    <None Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\UI\Assets\EnvironmentSelectorUi.uss" />
+    <None Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\UI\Assets\EnvironmentDropdown.uss" />
+    <None Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\UI\Assets\EnvironmentDropdown.uxml" />
+    <None Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\UI\Assets\EnvironmentView_style.uss" />
+    <None Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\UI\Assets\EnvironmentView.uxml" />
+    <None Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\UI\Assets\EnvironmentSelectorUi.uxml" />
+    <None Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Environments\Unity.Services.Core.Environments.Editor.asmdef" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -459,12 +504,68 @@
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.17f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="nunit.framework">
-      <HintPath>Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
+    <Reference Include="TextMateSharpPlastic">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@2.12.4\Lib\Editor\TextMateSharp\TextMateSharpPlastic.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="TextMateSharpPlastic.Grammars">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@2.12.4\Lib\Editor\TextMateSharp\TextMateSharpPlastic.Grammars.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.YamlDotNet">
+      <HintPath>Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="ReportGeneratorMerged">
+      <HintPath>Library\PackageCache\com.unity.testtools.codecoverage@1.2.4\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Plastic.Antlr3.Runtime">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@2.12.4\Lib\Editor\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="OnigwrapPlastic">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@2.12.4\Lib\Editor\TextMateSharp\Onigwrap\OnigwrapPlastic.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Plastic.Newtonsoft.Json">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@2.12.4\Lib\Editor\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="log4netPlastic">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@2.12.4\Lib\Editor\log4netPlastic.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.IonicZip">
+      <HintPath>Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="unityplastic">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@2.12.4\Lib\Editor\unityplastic.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
+      <HintPath>Library\PackageCache\com.unity.visualscripting@1.9.1\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.TextureAssets">
+      <HintPath>Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\EditorAssetResources\Unity.VisualScripting.TextureAssets.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Collections.LowLevel.ILSupport">
+      <HintPath>Library\PackageCache\com.unity.collections@1.2.4\Unity.Collections.LowLevel.ILSupport\Unity.Collections.LowLevel.ILSupport.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Mono.Cecil">
+      <HintPath>Library\PackageCache\com.unity.nuget.mono-cecil@1.11.4\Mono.Cecil.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@3.2.1\Runtime\Newtonsoft.Json.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="mscorlib">
@@ -969,6 +1070,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Unity.Services.Core.Internal.csproj" />
+    <ProjectReference Include="Unity.Services.Core.Editor.csproj" />
+    <ProjectReference Include="Unity.Services.Core.Configuration.Editor.csproj" />
+    <ProjectReference Include="Unity.Services.Core.Environments.csproj" />
+    <ProjectReference Include="Unity.Services.Core.csproj" />
     <ProjectReference Include="UnityEditor.UI.csproj" />
     <ProjectReference Include="UnityEngine.UI.csproj" />
     <ProjectReference Include="UnityEditor.TestRunner.csproj" />

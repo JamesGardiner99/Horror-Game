@@ -141,8 +141,8 @@
     <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Linker\Models\XmlLinkedPreserve.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\ProjectBindRedirect\ProjectBindRedirectPopupWindow.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\UiHelpers\OfflineUiHelper.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\UiHelpers\LoggedOutUiHelper.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\EditorGameService\EditorGameServiceDashboardHelper.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\UiHelpers\LoggedOutUiHelper.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\EditorGameService\Analytics\EditorGameServiceAnalyticsSender.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\UserRoleManagement\UserRoleClient.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\EditorGameService\DefaultCdnConfiguredEndpoint.cs" />
@@ -161,8 +161,8 @@
     <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\ProjectBindRedirect\ProjectBindRedirectPopupUI.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\UserRoleManagement\IUserRoleHandler.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Utils\ThreadingUtility.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Linker\LinkFileGenerator.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\UiHelpers\PlatformSupportUiHelper.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Linker\LinkFileGenerator.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\UiHelpers\ExceptionHelper.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Linker\Models\XmlLinkedAccessors.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.15.1\Editor\Core\Shared\DependencyInversion\IScopedServiceProvider.Gen.cs" />
@@ -579,6 +579,10 @@
       <HintPath>Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.Collections.LowLevel.ILSupport">
+      <HintPath>Library\PackageCache\com.unity.collections@1.2.4\Unity.Collections.LowLevel.ILSupport\Unity.Collections.LowLevel.ILSupport.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="ReportGeneratorMerged">
       <HintPath>Library\PackageCache\com.unity.testtools.codecoverage@1.2.4\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
       <Private>False</Private>
@@ -611,20 +615,16 @@
       <HintPath>Library\PackageCache\com.unity.visualscripting@1.9.1\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@3.2.1\Runtime\Newtonsoft.Json.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.VisualScripting.TextureAssets">
       <HintPath>Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\EditorAssetResources\Unity.VisualScripting.TextureAssets.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.Collections.LowLevel.ILSupport">
-      <HintPath>Library\PackageCache\com.unity.collections@1.2.4\Unity.Collections.LowLevel.ILSupport\Unity.Collections.LowLevel.ILSupport.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Mono.Cecil">
       <HintPath>Library\PackageCache\com.unity.nuget.mono-cecil@1.11.4\Mono.Cecil.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@3.2.1\Runtime\Newtonsoft.Json.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="nunit.framework">

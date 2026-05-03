@@ -13,10 +13,11 @@ public class TorchItem : NetworkBehaviour
     [SerializeField] private float maxBattery = 100f;
     [SerializeField] private float drainPerSecond = 3f;
 
-    [Header("Light Intensity")]
+    [Header("Light Settings")]
     [SerializeField] private float maxIntensity = 3f;
     [SerializeField] private float minIntensity = 0.5f;
     [SerializeField] private float dimStartThreshold = 0.5f;
+    [SerializeField] private float lightRange = 10f;
 
     [Header("Drop")]
     [SerializeField] private float dropForwardForce = 2f;
@@ -221,5 +222,6 @@ public class TorchItem : NetworkBehaviour
         }
 
         torchLight.intensity = intensity;
+        torchLight.range = lightRange;
     }
 }

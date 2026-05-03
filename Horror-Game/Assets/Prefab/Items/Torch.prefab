@@ -323,10 +323,10 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 2.5
+  m_Intensity: 3
   m_Range: 12
   m_SpotAngle: 65
-  m_InnerSpotAngle: 50
+  m_InnerSpotAngle: 20
   m_CookieSize: 10
   m_Shadows:
     m_Type: 2
@@ -571,17 +571,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   torchLight: {fileID: 7850367611843348547}
   rb: {fileID: 249651188274045127}
-  itemCollider: {fileID: 0}
-  maxBattery: 100
-  drainPerSecond: 4
-  maxIntensity: 3
-  minIntensity: 0.5
+  itemCollider: {fileID: 6755340911333237590}
+  maxBattery: 1000
+  drainPerSecond: 0
+  maxIntensity: 100
+  minIntensity: 1
   dimStartThreshold: 0.5
+  lightRange: 100
   dropForwardForce: 2
   dropUpForce: 1
   missRechargeAmount: 2
   goodRechargeAmount: 10
-  perfectRechargeAmount: 25
+  perfectRechargeAmount: 1000
 --- !u!54 &249651188274045127
 Rigidbody:
   m_ObjectHideFlags: 0
